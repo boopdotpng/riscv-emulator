@@ -3,3 +3,9 @@ The eventual goal is to write a simple RISC-V core on an FPGA (i have an arty a7
 
 ## setup instructions
 You need to set up the [risc-v-tests](https://github.com/riscv-software-src/riscv-tests) repository. Follow the instructions in their README. The python program just loads each ELF, maps the PT_LOAD segments to virtual memory, then executes the program line by line. 
+
+You also need the `pyelftools` python library.
+
+## what's missing 
+- `FENCE` and `FENCE.I` 
+- Traps 
